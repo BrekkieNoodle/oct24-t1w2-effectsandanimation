@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes two-colors {
+    from {
+        background-color: palevioletred;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+div {
+   height: 100px;
+   width: 100px;
+   background-color: rgb(140, 216, 112);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* transition: all 1s ease; */
+}
+
+
+div:hover {
+    animation: two-colors 3s forwards;
+    /* transform: translate(100px,200px) rotate(180deg); */
+    /*width: 200px;
+    height: 200px;
+    background-color: green;
+        */
+}
